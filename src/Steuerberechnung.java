@@ -10,7 +10,8 @@ public class Steuerberechnung {
         double steuersatz = eingabe.nextDouble();
 
         // V(erarbeitung)
-        double netto = 0.0;
+        double steuerbetrag = brutto * steuersatz / 100;
+        double netto = brutto - steuerbetrag;
 
         // A(usgabe)
         System.out.println("Der Nettobetrag ist " + netto);
